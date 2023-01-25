@@ -14,17 +14,21 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  width: 256px;
+  width: 240px;
   text-align: center;
   border: 10px solid #101116;
   background: #101116;
   border-radius: 5px;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(60px, auto);
+.button {
+  height: 60px;
+  width: 60px;
+}
+
+.equal {
+  height: 60px;
+  width: 180px;
 }
 
 input[type="text"] {
