@@ -1,4 +1,4 @@
-import math from "mathjs/lib/browser/math.js";
+import {evaluate} from 'mathjs'
 import { useState } from "react";
 import './App.css';
 
@@ -19,7 +19,7 @@ function App() {
 
   const handleCalculate = () => {
     try {
-      setDisplayValue(eval(displayValue).toString());
+      setDisplayValue(evaluate(displayValue).toString());
     } catch (err) {
       setDisplayValue(err);
     }
@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <div className="container">
-          <input type="text" value={displayValue} maxLength='1'/>
+          <input type="text" value={displayValue}/>
         <div className="buttons">
           <button className="button" value="clear" onClick={handleClearClick}>Clear</button>
           <button className="button" value="c" onClick={handleBackSpace}>c</button>   
