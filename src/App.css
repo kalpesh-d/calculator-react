@@ -10,28 +10,45 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  width: 240px;
-  text-align: center;
-  border: 10px solid #101116;
-  background: #101116;
-  border-radius: 5px;
+  width: 340px;
+  height: 530px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #28313b;
+}
+
+.buttons {
+  margin: 5px;
 }
 
 .button {
-  height: 60px;
-  width: 60px;
+  font-size: 18px;
+  height: 82px;
+  width: 82px;
+}
+
+.button[value="c"] {
+  width: 164px;
+}
+
+.button[value="="] {
+  width: 164px;
 }
 
 .equal {
   height: 60px;
-  width: 180px;
+  width: 240px;
 }
 
 input[type="text"] {
-  height: 75px;
-  width: 249px;
-  background-color: #10111600;
-  border: 0px;
-  color: #fff;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background-color: #4357692d;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: right;
 }
